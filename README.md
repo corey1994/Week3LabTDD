@@ -1,5 +1,8 @@
 # Week3LabTDD
 
+[![Build Status](https://travis-ci.com/corey1994/Week3LabTDD.svg?branch=master)](https://travis-ci.com/corey1994/Week3LabTDD)
+[![codecov](https://codecov.io/gh/corey1994/Week3LabTDD/branch/master/graph/badge.svg)](https://codecov.io/gh/corey1994/Week3LabTDD)
+
 The master branch contains the skeleton. 
 
 There is a database somewhere, that contains soccer players' records: name, number of matches, and scores. 
@@ -17,5 +20,4 @@ MinorGoal: Use Mockito.
 The Main Goal: The Development must follow Test-Driven-Development principles. 
 And finally, with Travis CI, we want to check the coverage of our test suite. 
 
-[![Build Status](https://travis-ci.com/corey1994/Week3LabTDD.svg?branch=master)](https://travis-ci.com/corey1994/Week3LabTDD)
-[![codecov](https://codecov.io/gh/corey1994/Week3LabTDD/branch/master/graph/badge.svg)](https://codecov.io/gh/corey1994/Week3LabTDD)
+
