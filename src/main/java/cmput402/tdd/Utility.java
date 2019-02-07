@@ -24,23 +24,23 @@ public class Utility {
 		return map;
 	}
 	
-//public HashMap<String, Integer>  findTopScorer(Search search){
-//		
-//	HashMap<String, ArrayList<Integer>> stats = search.returnAll();
-//	
-//	HashMap<String, Integer> map = new HashMap<String, Integer>();
-//	String bestPlayer = new String();
-//	
-//	for(String player: stats.keySet()) {
-//		if(bestPlayer == null) {
-//			bestPlayer = player;
-//			
-//		} else if(stats.get(player).get(1) > stats.get(bestPlayer).get(1)) {
-//			bestPlayer = player;
-//		}
-//	}
-//	map.put(bestPlayer, stats.get(bestPlayer).get(1));
-//	return map;
-//	}
-//	
+public HashMap<String, Integer>  findTopScorer(Search search){
+		
+	HashMap<String, ArrayList<Integer>> stats = search.returnAll();
+	
+	HashMap<String, Integer> map = new HashMap<String, Integer>();
+	String bestPlayer = new String();
+	
+	for(String player: stats.keySet()) {
+		if(bestPlayer == null) {
+			bestPlayer = player;
+			
+		} else if(stats.get(player).get(1) > stats.get(bestPlayer).get(1)) {
+			bestPlayer = player;
+		}
+	}
+	map.put(bestPlayer, stats.get(bestPlayer).get(1));
+	return map;
+	}
+	
 }

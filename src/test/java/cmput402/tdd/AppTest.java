@@ -66,33 +66,33 @@ public class AppTest
 
     }
     
-//    public void testTopScorer() {
-//    	Search mockSearch = mock(Search.class);
-//    	
-//    	HashMap<String, ArrayList<Integer>> fakeMap = new HashMap<String, ArrayList<Integer>>();
-//    	
-//    	ArrayList<Integer> messi = new ArrayList<Integer>();
-//    	messi.add(100);
-//    	messi.add(200);
-//    	
-//    	ArrayList<Integer> ronaldo = new ArrayList<Integer>();
-//    	ronaldo.add(80);
-//    	ronaldo.add(150);
-//    	
-//    	ArrayList<Integer> neymar = new ArrayList<Integer>();
-//    	neymar.add(50);
-//    	neymar.add(80);
-//    	
-//    	fakeMap.put("messi", messi);
-//    	fakeMap.put("ronaldo", ronaldo);
-//    	fakeMap.put("neymar", neymar);
-//    	
-//    	when(mockSearch.returnAll()).thenReturn(fakeMap);
-//    	
-//    	HashMap<String, Integer> results = util.findTopScorer(mockSearch);
-//    	
-//    	assert(200 == results.get("messi"));
-//    	assert(null == results.get("ronaldo"));
-//    	assert(null == results.get("ronaldo"));
-//    }
+    public void testTopScorer() {
+    	Search mockSearch = mock(Search.class);
+    	
+    	HashMap<String, ArrayList<Integer>> fakeMap = new HashMap<String, ArrayList<Integer>>();
+    	
+    	ArrayList<Integer> messi = new ArrayList<Integer>();
+    	messi.add(100);
+    	messi.add(200);
+    	
+    	ArrayList<Integer> ronaldo = new ArrayList<Integer>();
+    	ronaldo.add(80);
+    	ronaldo.add(150);
+    	
+    	ArrayList<Integer> neymar = new ArrayList<Integer>();
+    	neymar.add(50);
+    	neymar.add(80);
+    	
+    	fakeMap.put("messi", messi);
+    	fakeMap.put("ronaldo", ronaldo);
+    	fakeMap.put("neymar", neymar);
+    	
+    	when(mockSearch.returnAll()).thenReturn(fakeMap);
+    	
+    	HashMap<String, Integer> results = util.findTopScorer(mockSearch);
+    	
+    	assert(200 == results.get("messi"));
+    	assert(null == results.get("ronaldo"));
+    	assert(null == results.get("ronaldo"));
+    }
 }
